@@ -1,0 +1,44 @@
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+html{
+  max-height: 100%;
+  max-width: 100%;
+}
+h2, h1{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.weatherData{
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: center;
+  font-size: 40px; 
+}
+
+p{margin-left: auto;
+  margin-right: auto; 
+  text-align: center; 
+  font-size: 22px;
+}
+.WULogo{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
