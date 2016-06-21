@@ -14,15 +14,15 @@ var imperialCountries = ["US", "Liberia", "Myanmar"];
       console.log(imperialCountries);    
     
     //Get City and State and place into location field.
-    $.getJSON('//api.wunderground.com/api/*d9631bbbc8a29740/geolookup/q/' + position.coords.latitude + ',' + position.coords.longitude + '.json', function(data) {
+    $.getJSON('//api.wunderground.com/api/d9631bbbc8a29740/geolookup/q/' + position.coords.latitude + ',' + position.coords.longitude + '.json', function(data) {
  
  $("h1").append(data.location.city + ", " + data.location.state);
 
       //Get Weather Data 
-      $.getJSON('//api.wunderground.com/api/*d9631bbbc8a29740/conditions/q/'+data.location.state+'/'+data.location.city+'.json', function(conditions) {
+      $.getJSON('//api.wunderground.com/api/d9631bbbc8a29740/conditions/q/'+data.location.state+'/'+data.location.city+'.json', function(conditions) {
 
         //Temp
-       $(".tempBox").append(conditions.current_observation.temp_f);
+       $(".tempBox").append(conditions.current_observation.temp_f + &deg);
         
         
         
