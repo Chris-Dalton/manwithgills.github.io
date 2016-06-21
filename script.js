@@ -22,12 +22,14 @@ var imperialCountries = ["US", "Liberia", "Myanmar"];
       $.getJSON('//api.wunderground.com/api/d9631bbbc8a29740/conditions/q/'+data.location.state+'/'+data.location.city+'.json', function(conditions) {
 
         //Temp
-       $(".tempBox").append(conditions.current_observation.temp_f + " &deg");
+       $("#tempBox").append(conditions.current_observation.temp_f + " &deg");
         
         
         
         //windspeed
         $("#windSpeed").append(conditions.current_observation.wind_mph+" MPH");
+		//humidity
+		$("#humidity").append(conditions.current_observation.relative_humidity);
 
         //icon
 $("#iconBox").css(background-image, "url:(+'conditions.current_observation.icon_url'+)");
