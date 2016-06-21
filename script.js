@@ -32,7 +32,7 @@ var imperialCountries = ["US", "Liberia", "Myanmar"];
 		$("#humidity").append(conditions.current_observation.relative_humidity);
 
         //icon
-$("#iconBox").css(background-image, "url:('http://icons.wxug.com/i/c/g/'+conditions.ICON+'.gif')");
+$("#iconBox").css(background-image, "url:('http://icons.wxug.com/i/c/g/'+observation_location.icon+'.gif')");
 
       })
     });
