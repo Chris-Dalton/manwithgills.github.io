@@ -22,7 +22,7 @@ var imperialCountries = ["US", "Liberia", "Myanmar"];
       $.getJSON('//api.wunderground.com/api/d9631bbbc8a29740/conditions/q/'+data.location.state+'/'+data.location.city+'.json', function(conditions) {
 
         //Temp
-       $("#tempBox").append(conditions.current_observation.temp_f + " &deg");
+       $("#tempBox").append(conditions.current_observation.temp_f + '&#176');
         
         
         
